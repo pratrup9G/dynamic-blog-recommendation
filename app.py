@@ -301,7 +301,7 @@ def recommendation():
         most_similar_documents =most_similar_documents[(most_similar_documents['Webpage'] == 'Medium') | (most_similar_documents['Webpage'] == 'Towards_Data_Science') | (most_similar_documents['Webpage'] == 'Analytics_Vidhya')]
 
     #Append the titles and links and webpage of the most_similar_documents in titles and links and send it to webpage
-    for i in range(0,10):
+    for i in range(0,4):
         titles.append(most_similar_documents['Title'].iloc[i])
         links.append(most_similar_documents['Links'].iloc[i])
         webpage.append(most_similar_documents['Webpage'].iloc[i])
