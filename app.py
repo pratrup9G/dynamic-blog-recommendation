@@ -8,6 +8,8 @@ import demoji #(pip install demoji) after that demoji.download_codes()
 import re
 import nltk
 nltk.download('stopwords')
+nltk.download('wordnet')
+
 from nltk.corpus import stopwords
 import string
 from nltk.tokenize import word_tokenize,TweetTokenizer
