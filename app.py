@@ -204,7 +204,7 @@ def web_scrapper(link):
     chrome_options.binary_location = GOOGLE_CHROME_PATH
     
     #driver = webdriver.Chrome(r'C:\Users\BABI\chromedriver_win32\chromedriver.exe')## Give the location of your chromedriver (Download chromedriver it's required for scraping using selinium)
-    driver = webdriver.Chrome(execution_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
+    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
     driver.get(link)
     description_p = driver.find_elements_by_tag_name('p')
     doc = []
